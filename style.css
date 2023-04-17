@@ -1,0 +1,381 @@
+/* SET-UP */
+:root{
+--blue: rgb(6, 57, 108);
+--white: white;
+
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    cursor: default;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+    font-family: 'Electrolize', sans-serif;
+}
+.txt-blue{
+    color: var(--blue);
+}
+.txt-white{
+    color: var(--white);
+}
+
+/* HEADER */
+.bg-header{
+    height: 80vh ;
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.7),rgba(6, 57, 108, 0.7) ), url(./media/header.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.bg-navbar{
+    background-color: var(--blue);
+    height: 8vh;
+}
+
+.logo{
+    margin-left: 150px;
+    padding: 5px;
+    height: 5vh;
+    margin-right: 30px;
+}
+
+.line::before{
+    content: "|";
+    padding-right: 25px;
+    color: var(--white);
+}
+
+.linkNav:hover{
+    color: aqua;
+}
+
+@media screen and (max-width:576px) {
+    .bg-navbar{
+        height: 15vh;
+    }
+    .logo{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* MAIN */
+.openQuotes{
+    position: relative;
+}
+.openQuotes::before{
+    content: "“";
+    position: absolute;
+    color: var(--blue);
+    font-size: 200px;
+    top: -110px;
+    left: -60px;
+}
+
+.text{
+    width: 80%;
+}
+
+.bold{
+    font-weight: 900;
+}
+.f-size{
+    font-size: 16px;
+}
+
+@media screen and (max-width:576px){
+    .openQuotes{
+        position: relative;
+    }
+    .openQuotes::before{
+        content: "“";
+        position: absolute;
+        color: var(--blue);
+        font-size: 120px;
+        top: -62px;
+        left: -35px;
+    }
+    .text{
+     margin-left: 30px; 
+    }
+}
+
+/* POWER LOREM */
+.bg-powerLorem{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/power-plant-4712830_1280.jpg);
+    height: 69vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-lightbulb:hover{
+    text-shadow: 0px 0px 13px gold;
+    color: gold;
+
+}
+.vh-powerLorem{
+    height: 60vh;
+}
+
+/* DOUBLE DIV */
+.card-blue{
+    margin-top: -150px;
+    min-height: 68vh;
+    background-color: var(--blue);
+    border: 3px solid var(--white);
+}
+
+.img-panel{
+    width: 28vw;
+}
+.w-custom{
+    width: 32vw;
+}
+
+.card-white{
+    margin-top: -47px;
+    margin-left: -100px;
+    background-color: var(--white);
+    height: 70vh;
+}
+
+@media screen and (max-width:576px) {
+    .card-blue{
+        margin-top: -120px;
+    }
+    .card-white{
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    .w-custom{
+        width: 75%;
+    }
+    .img-panel{
+        width: 100vw;
+    }
+}
+/* DESCRIPTION */
+.btn-custom{
+    padding: 7px 50px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-color: transparent;
+    transition: 0.5s;
+}
+.btn-custom:hover{
+    color: var(--blue);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    transform: scale(1.2);
+}
+
+/* AMERICAN NO CSS */
+
+/* 4 cards */
+.w-link{
+    width: 100px;
+}
+.cardSacramento{
+    background-image: url(./media/american-river-gc7b3c28da_1920.jpg);
+    height: 22vh;
+    width: 40%;
+    background-size: cover;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cardCarson{
+    background-image: url(./media/CarsonCity.jpg);
+    height: 22vh;
+    width: 40%;
+    background-size: cover;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cardNewYork{
+    background-image: url(./media/newYork.jpg   );
+    height: 22vh;
+    width: 40%;
+    background-size: cover;
+    position: relative;
+    transition: 0.5s;
+}
+.cardDallas{
+    background-image: url(./media/dallas-gd99069498_1920.jpg   );
+    height: 22vh;
+    width: 40%;
+    background-size: cover;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cardCarson:hover, .cardDallas:hover, .cardNewYork:hover, .cardSacramento:hover{
+    background-position-x: 150% ;
+    transform: scale(1.1);
+
+}
+
+.shadow-custom{
+    position: absolute;
+    width: 30vw;
+    height: 22vh;
+    background: linear-gradient(90deg, rgba(6,57,108,0.5) 0%, rgba(6,57,108,0.1) 30%, rgba(0,0,0,0) 100%);
+    top: -20px;
+    left: -30px;
+}
+
+.shadow-text{
+    z-index: 50;
+}
+
+.m-custom{
+    margin-top: 100px;
+}
+
+.vh-custom{
+    height: 70vh;
+}
+
+/* Some Stuff */
+.stuff{
+    background-color: var(--blue);
+    height: 30vh;
+}
+.scheda1{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/sun.png);
+    height: 20vh;
+    background-size: cover;
+    width: 20vw;
+}
+
+.scheda2{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/wind.png);
+    height: 20vh;
+    background-size: cover;
+    width: 20vw;
+}
+.scheda3{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/wave.png);
+    height: 20vh;
+    background-size: cover;
+    width: 20vw;
+}
+
+.scheda4{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/gas.png);
+    height: 20vh;
+    background-size: cover;
+    width: 20vw;
+}
+
+.scheda5{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/oil.png);
+    height: 20vh;
+    background-size: cover;
+    width: 20vw;
+}
+
+.scheda6{
+    background-image:linear-gradient(0deg,rgba(6, 57, 108, 0.45),rgba(6, 57, 108, 0.45) ), url(./media/nuclear.png);
+    height: 20vh;
+    background-size: cover;
+    width: 20vw;
+}
+
+.m-negative{
+    margin-top: -50px;
+}
+
+@media screen and (max-width:576px) {
+    .scheda1, .scheda2, .scheda3, .scheda4, .scheda5, .scheda6{
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+}
+
+/* downloads */
+
+.cardDownload{
+    width: 20vw;
+    height: 20vh;
+}
+
+@media screen and (max-width:576px) {
+    .cardDownload{
+        width: 90vw;
+        height: 25vh;
+    }
+}
+
+/* description 2 w/progressBar */
+
+.color-Bar{
+    background-color: var(--blue);
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+
+.progressLorem{
+    width: 25%;
+}
+.progressLibero{
+    width: 55%;
+}
+.progressMollitia{
+    width: 70%;
+}
+.progressDeleniti{
+    width: 90%;
+}
+.progressOmnis{
+    width: 80%;
+}
+
+/* OTHER STUFF */
+.other-stuff{
+    background-color: var(--blue);
+    height: 40vh;
+    width: 50vh;
+    margin-bottom: -285px;
+    margin-top: 60px;
+}
+
+ul{
+   list-style-type: none;    
+}
+li{
+    position: relative;
+}
+li::before{
+    content: ">";
+    position: absolute;
+    color: var(--white);
+    left: -30px;
+    top: -10px;
+    font-size: 30px;
+}
+a:hover, .esplora:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    .other-stuff{
+        margin-bottom: 0px;
+    }
+}
+
+/* footer */
+.bg-footer{
+    background-color: black;
+    height: 47vh;
+}
+.img-footer{
+    width: 70px;
+}
